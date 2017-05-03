@@ -9,15 +9,15 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class UserService {
 
-	private final UserRepository userRepository;
+    private final UserRepository userRepository;
 
-	@Autowired
-	public UserService(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
-	@Transactional
-	public Iterable<User> findAllUsers() {
-		return userRepository.findAll();
-	}
+    @Transactional
+    public Iterable<User> findAllUsers() {
+        return userRepository.findAll();
+    }
 }

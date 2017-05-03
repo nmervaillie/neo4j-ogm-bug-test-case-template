@@ -20,10 +20,10 @@
         </encoder>
     </appender>
 
-    <logger name="org.neo4j.ogm" level="debug" />
+    <logger name="org.neo4j.ogm" level="debug"/>
 
     <root level="warn">
-        <appender-ref ref="console" />
+        <appender-ref ref="console"/>
     </root>
 
 </configuration>
