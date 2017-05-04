@@ -41,18 +41,32 @@ For the purpose of these instructions, we'll assume your new JIRA issue ID is "D
 1\. In your local clone of this repository, create a copy of the appropriate 'template' directory. They live in the 
 [template](https://github.com/nmervaillie/neo4j-ogm-bug-test-case-template/templates) directory.
 
-For [SDN 5.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-5.0) issues:
+For [SDN 5.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-5.x) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
-./create-repro-project.sh templates/sdn-5.x/ DATAGRAPH-123
+./create-repro-project.sh sdn-5.x DATAGRAPH-123
 ```
 
 For [SDN 4.2](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-4.2) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
-./create-repro-project.sh templates/sdn-4.2/ DATAGRAPH-123
+./create-repro-project.sh sdn-4.2 DATAGRAPH-123
+```
+
+For [SDN 4.1](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-4.1) issues:
+
+```bash
+cd neo4j-ogm-bug-test-case-template
+./create-repro-project.sh sdn-4.1 DATAGRAPH-123
+```
+
+For [OGM 2.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/ogm-2.x) issues:
+
+```bash
+cd neo4j-ogm-bug-test-case-template
+./create-repro-project.sh ogm-2.x issue-123
 ```
 
 2\. Review the list of dependencies and version numbers and modify the pom.xml as necessary.
@@ -85,9 +99,9 @@ here for your issue if you think it will help us to understand the scenario bett
 
 ### What about patches against the Spring Framework itself? Should I still attach those to my JIRA issue?
 
-Yes, patches against JIRA will always be supported, but keep in mind that the Spring Framework project itself
+Yes, patches against JIRA will always be supported, but keep in mind that the Spring Data Neo4j project itself
 is hosted on GitHub as well, and pull requests are even better! See the "Contributing" section of the Spring
-Data Neo4j [readme](https://github.com/spring-projects/spring-data-neo4j#README.adoc) for details.
+Data Neo4j [readme](https://github.com/spring-projects/spring-data-neo4j#contributing-to-spring-data-neo4j) for details.
 
 ### Can I still attach .zip files to my JIRA issue?  Is it required to use this repository?
 
