@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.neo4j.harness.junit.Neo4jRule;
 import org.neo4j.ogm.session.SessionFactory;
-import org.neo4j.ogm.testutil.TestServer;
 import org.neo4j.testcasetemplate.domain.User;
 import org.neo4j.testcasetemplate.repository.UserRepository;
 import org.neo4j.testcasetemplate.service.UserService;
@@ -63,15 +62,12 @@ public class SdnTestCase {
 
         @Bean
         public org.neo4j.ogm.config.Configuration configuration() {
-            org.neo4j.ogm.config.Configuration configuration = new org.neo4j.ogm.config.Configuration();
-            configuration.driverConfiguration()
-                    .setDriverClassName("org.neo4j.ogm.drivers.bolt.driver.BoltDriver")
-                    .setURI(neoServer.boltURI().toString());
+            return new org.neo4j.ogm.config.Configuration.Builder()
+                    .uri(neoServer.boltURI().toString())
+                    .build();
 // use this for HTTP driver
-//					.setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")
-//					.setURI(neoServer.boltURI().toString());
-
-            return configuration;
+//                    .uri(neoServer.httpURI().toString())
+//                    .build();
         }
     }
 }
