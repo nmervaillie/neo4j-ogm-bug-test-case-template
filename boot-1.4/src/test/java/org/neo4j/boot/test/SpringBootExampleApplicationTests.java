@@ -31,7 +31,7 @@ public class SpringBootExampleApplicationTests {
     }
 
     @Test
-	public void testClient() throws Exception {
+	public void test_create_user() throws Exception {
         mockMvc.perform(post("/test")
             .contentType(MediaType.APPLICATION_JSON)
             .content("{\"email\":\"aa@bb.com\"}"))
