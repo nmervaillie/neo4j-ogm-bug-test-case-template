@@ -97,7 +97,7 @@ git push
 In certain cases, it may make sense to submit a project for improvement requests.  Feel free to submit a project
 here for your issue if you think it will help us to understand the scenario better.
 
-### What about patches against the Spring Framework itself? Should I still attach those to my JIRA issue?
+### What about patches against Spring Data Neo4j itself? Should I still attach those to my JIRA issue?
 
 Yes, patches against JIRA will always be supported, but keep in mind that the Spring Data Neo4j project itself
 is hosted on GitHub as well, and pull requests are even better! See the "Contributing" section of the Spring

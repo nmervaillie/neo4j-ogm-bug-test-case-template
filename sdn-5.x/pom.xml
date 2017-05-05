@@ -14,7 +14,7 @@
         <groupId>org.neo4j.ogm.testcasetemplate</groupId>
         <artifactId>testcasetemplate</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../parent/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <properties>
