@@ -38,35 +38,48 @@ For the purpose of these instructions, we'll assume your new JIRA issue ID is "D
 
 #### Steps
 
-1\. In your local clone of this repository, create a copy of the appropriate 'template' directory. They live in the 
-[template](https://github.com/nmervaillie/neo4j-ogm-bug-test-case-template/templates) directory.
+1\. In your local clone of this repository, create a copy of the appropriate template directory.
 
-For [SDN 5.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-5.x) issues:
+For [SDN 5.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/sdn-5.x) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
 ./create-repro-project.sh sdn-5.x DATAGRAPH-123
 ```
 
-For [SDN 4.2](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-4.2) issues:
+For [SDN 4.2](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/sdn-4.2) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
 ./create-repro-project.sh sdn-4.2 DATAGRAPH-123
 ```
 
-For [SDN 4.1](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/sdn-4.1) issues:
+For [SDN 4.1](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/sdn-4.1) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
 ./create-repro-project.sh sdn-4.1 DATAGRAPH-123
 ```
 
-For [OGM 2.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/templates/ogm-2.x) issues:
+For [OGM 2.x](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/ogm-2.x) issues:
 
 ```bash
 cd neo4j-ogm-bug-test-case-template
 ./create-repro-project.sh ogm-2.x issue-123
+```
+
+For [SDN with Spring Boot 1.5](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/boot-1.5) issues:
+
+```bash
+cd neo4j-ogm-bug-test-case-template
+./create-repro-project.sh boot-1.5 DATAGRAPH-123
+```
+
+For [SDN with Spring Boot 1.4](https://github.com/spring-projects/nmervaillie/neo4j-ogm-bug-test-case-template/boot-1.4) issues:
+
+```bash
+cd neo4j-ogm-bug-test-case-template
+./create-repro-project.sh boot-1.4 DATAGRAPH-123
 ```
 
 2\. Review the list of dependencies and version numbers and modify the pom.xml as necessary.
